@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+ <title>PHP Fortress Official</title>
+<link rel="canonical" href="#">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Fancy Text Generator">
+<meta property="og:description" content="Fancy Text Generator">
+<meta property="og:url" content="#">
+<meta property="og:site_name" content="Fonts4Instagram">
+<link rel="stylesheet" href="css/normalise-8.0.1.css" type="text/css">
+  <link href="style.css" rel="stylesheet">
+  <script src="jquery.min.js"></script>
+<style>
+.site-title a, footer{
+    display:  block;
+}
+.tile:active, a:active, a:hover {
+    outline:  0;
+}
+a {
+    text-decoration:  none;
+}
+body, html {
+    padding:  0;
+    margin:  0;
+    height:  100%}
+*, body, html {
+    box-sizing:  border-box;
+}
+::-webkit-scrollbar {
+    width:  5px;
+}
+::-webkit-scrollbar-track {
+    background:  #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background:  #114686;
+}
+::-webkit-scrollbar-thumb:hover {
+    background:  #000;
+}
+body {
+    background:  #f3f5f8;
+    font-family:  'Open Sans',  sans-serif;
+}
+.site-title a {
+    color:  #fff;
+    padding-top:  0;
+    font-size:  50px;
+    font-weight:  700;
+    opacity:  .9;
+}
+.site-branding-text {
+    background:  #2d608c;
+    padding:  0;
+    color:  #FFF;
+    text-align:  center;
+}
+p.site-title {
+    margin:  0;
+    font-weight:  700;
+}
+.site-title a {
+    color:  #fff;
+    padding:  5px;
+    font-size:  35px;
+    opacity:  .9;
+}
+p.site-description {
+    font-size:  15px;
+    color:  #d1920b;
+    margin-top:  0;
+    padding-bottom:  5px;
+}
+.footer, .full-width.text-center {
+    clear:  both;
+}
+.container {
+    max-width:  1065px;
+    margin:  0 auto;
+}
+.footer {
+    margin-top:25px;
+    background:  #2d878c;
+    color:  #fff;
+    padding:  5px 5%;
+    text-align:  center;
+}
+.footer a {
+    color:  #006713;
+}
+
+.footer p {
+    line-height:  1.5;
+    color:  #fff;
+}
+
+@media only screen and (max-width:970px) {
+    .container {
+    margin:  0 12px;
+}
+}
+@media only screen and (max-width:600px) {
+    header {
+    display:  none;
+}
+p.site-description {
+    display:  none;
+}
+.footer p {
+    font-size:  10px;
+}
+.site-title a, h1 {
+    font-size:  20px;
+    padding-top:  0px;
+}
+h1 {
+    padding:  3px;
+}
+
+}
+
+</style>
+
+<style>
+.title{text-align:center;}h1{font-size: 2.3em;}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #383838;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #2d608c;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #0d5c11;
+  color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (min-width: 600px) {
+a.sitelogo{display: none;}
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+</style>
+<script>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function mynavFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}</script>
+</head>
+<body class="hentry">
+<header>
+<div class="site-branding-text">
+<p class="site-title"><a href="#" rel="home">Fancy Text Generator</a></p>
+<p class="site-description container">
+Font Changer
+</p>
+</div>
+</header>
+<div class="topnav" id="myTopnav">
+  <a href="https://telegram.dog/PHP_FortressOfficial" class="sitelogo">Fancy Text Generator</a>
+  <a href="https://telegram.dog/PHP_FortressOfficial" class="active">Home</a>
+  <a href="https://telegram.dog/PHP_FortressOfficial">Privacy Policy</a>
+  <a href="https://telegram.dog/PHP_FortressOfficial">Disclaimer</a>
+  <a href="https://telegram.dog/PHP_FortressOfficial" >Contact Us</a>
+  <a href="javascript:void(0);" class="icon" onclick="mynavFunction()">&#9776;</a>
+</div>
+
+<main class="container">
+
+<!-- Content -->
+	<div class="container">
+    <div class="your-text">
+      <p>Enter Your Text or Type</p>
+      <input id="your-text" placeholder="Your Text Here"></input><button id="random">Randomize</button>
+    </div>
+    <div class="thefancy">
+      <div class="links">
+	  
+      </div>
+	  <h4>CLICK ON THE TEXT TO COPY IT ⤋</h4>
+      <div class="the-fancy-text" id="thefancy-text"><div class="fancy-text"><p>𝔉𝔞𝔫𝔠𝔶 𝔗𝔢𝔵𝔱 𝔊𝔢𝔫𝔢𝔯𝔞𝔱𝔢𝔯</p></div><div class="fancy-text"><p>𝕱𝖆𝖓𝖈𝖞 𝕿𝖊𝖝𝖙 𝕲𝖊𝖓𝖊𝖗𝖆𝖙𝖊𝖗</p></div><div class="fancy-text"><p>🐝😂  𝔣ａ𝓷𝐜ч tⓔ𝐱ᵗ Ꮆｅηｅ𝓇卂𝓣𝐞𝓇  👊🐚</p></div><div class="fancy-text"><p>𝓕𝓪𝓷𝓬𝔂 𝓣𝓮𝔁𝓽 𝓖𝓮𝓷𝓮𝓻𝓪𝓽𝓮𝓻</p></div><div class="fancy-text"><p>𝐹𝒶𝓃𝒸𝓎 𝒯𝑒𝓍𝓉 𝒢𝑒𝓃𝑒𝓇𝒶𝓉𝑒𝓇</p></div><div class="fancy-text"><p>𝔽𝕒𝕟𝕔𝕪 𝕋𝕖𝕩𝕥 𝔾𝕖𝕟𝕖𝕣𝕒𝕥𝕖𝕣</p></div><div class="fancy-text"><p>Ｆａｎｃｙ Ｔｅｘｔ Ｇｅｎｅｒａｔｅｒ</p></div><div class="fancy-text"><p>🐷 ⋆ 🐸  🎀  𝐹𝒶𝓃𝒸𝓎 𝒯𝑒𝓍𝓉 𝒢𝑒𝓃𝑒𝓇𝒶𝓉𝑒𝓇  🎀  🐸 ⋆ 🐷</p></div><div class="fancy-text"><p>ꜰᴀɴᴄʏ ᴛᴇxᴛ ɢᴇɴᴇʀᴀᴛᴇʀ</p></div><div class="fancy-text"><p>ɹǝʇɐɹǝuǝ⅁ ʇxǝ⊥ ʎɔuɐℲ</p></div><div class="fancy-text"><p>🄵🄰🄽🄲🅈 🅃🄴🅇🅃 🄶🄴🄽🄴🅁🄰🅃🄴🅁</p></div><div class="fancy-text"><p>ɿɘƚɒɿɘᴎɘᎮ ƚxɘT ʏɔᴎɒꟻ</p></div><div class="fancy-text"><p style="padding:50px 0">F̷͓̼͖̫̊a̶̩͔͌́̾̄͌n̴̘̰̞̞̩̄̈́̋͂̿̐̈́͊͝͠c̸͉̾͆͆y̵̨͐̑̓͑ ̷̧̡̳̜͓̼̀̏T̴̠͉̘̖̩̗̖̱̬̊̈́͌̉͊͒͒̕ͅè̷̢̟̥̙͇̘̟̘̗͛́͑̉͘x̶̛̪̟̦̦̮̭̺͍̻̬t̴͚̠͔͚̙̦͚͕͗ ̸̙̦̳͍̃͒̀̓G̵̯͕̞͈̗͂̾̾̈́̂̕e̴̥͖̦̥̱͒̄͆̈́̍̍̔͠n̵̦̳̖̥̩̮̏̌͌̌é̵̛̜̪̫͊̔̓̚r̸̡̛͈͙͓̜̳̯͚̀̆͌a̷̡͉͚̝̲̼̜̭̥̣̓́̔͂͆͑͝t̴̙͓͇̩̹̹̽̀̍̈́̽͒ë̸̛̤̊̈́̀̊̾̚r̷̛̹̦̜̗͂͊͐͒̐̾̀͝</p></div><div class="fancy-text"><p>🅵🅰🅽🅲🆈 🆃🅴🆇🆃 🅶🅴🅽🅴🆁🅰🆃🅴🆁</p></div><div class="fancy-text"><p>Fₐₙcy ₜₑₓₜ Gₑₙₑᵣₐₜₑᵣ</p></div><div class="fancy-text"><p>ᶠᵃⁿᶜʸ ᵀᵉˣᵗ ᴳᵉⁿᵉʳᵃᵗᵉʳ</p></div><div class="fancy-text"><p>Ƒąղçվ Ͳҽ×է Ɠҽղҽɾąէҽɾ</p></div><div class="fancy-text"><p>ᖴᗩᑎᑕY TE᙭T GEᑎEᖇᗩTEᖇ</p></div><div class="fancy-text"><p>ᖴᗩᘉᑢᖻ ᖶᘿ᙭ᖶ ᘜᘿᘉᘿᖇᗩᖶᘿᖇ</p></div><div class="fancy-text"><p>F̶a̶n̶c̶y̶ ̶T̶e̶x̶t̶ ̶G̶e̶n̶e̶r̶a̶t̶e̶r̶</p></div><div class="fancy-text"><p>F̴a̴n̴c̴y̴ ̴T̴e̴x̴t̴ ̴G̴e̴n̴e̴r̴a̴t̴e̴r̴</p></div><div class="fancy-text"><p>F̷a̷n̷c̷y̷ ̷T̷e̷x̷t̷ ̷G̷e̷n̷e̷r̷a̷t̷e̷r̷</p></div><div class="fancy-text"><p>F̲a̲n̲c̲y̲ ̲T̲e̲x̲t̲ ̲G̲e̲n̲e̲r̲a̲t̲e̲r̲</p></div><div class="fancy-text"><p>F̳a̳n̳c̳y̳ ̳T̳e̳x̳t̳ ̳G̳e̳n̳e̳r̳a̳t̳e̳r̳</p></div></div>
+      
+      <div class="the-fancy-text" id="thefancy-text-two"><div class="fancy-text"><p>Ⓕⓐⓝⓒⓨ Ⓣⓔⓧⓣ Ⓖⓔⓝⓔⓡⓐⓣⓔⓡ</p></div><div class="fancy-text"><p>Ŧคภςץ ՇєאՇ ﻮєภєгคՇєг</p></div><div class="fancy-text"><p>Fαɳƈყ Tҽxƚ Gҽɳҽɾαƚҽɾ</p></div><div class="fancy-text"><p>ʄǟռƈʏ ȶɛӼȶ ɢɛռɛʀǟȶɛʀ</p></div><div class="fancy-text"><p>ᎦᏗᏁፈᎩ ᏖᏋጀᏖ ᎶᏋᏁᏋᏒᏗᏖᏋᏒ</p></div><div class="fancy-text"><p>ʄąŋƈყ ɬɛҳɬ ɠɛŋɛཞąɬɛཞ</p></div><div class="fancy-text"><p>fคຖ¢ฯ tēxt ງēຖērคtēr</p></div><div class="fancy-text"><p>𝐅𝐚𝐧𝐜𝐲 𝐓𝐞𝐱𝐭 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐫</p></div><div class="fancy-text"><p>𝘍𝘢𝘯𝘤𝘺 𝘛𝘦𝘹𝘵 𝘎𝘦𝘯𝘦𝘳𝘢𝘵𝘦𝘳</p></div><div class="fancy-text"><p>𝙁𝙖𝙣𝙘𝙮 𝙏𝙚𝙭𝙩 𝙂𝙚𝙣𝙚𝙧𝙖𝙩𝙚𝙧</p></div><div class="fancy-text"><p>𝙵𝚊𝚗𝚌𝚢 𝚃𝚎𝚡𝚝 𝙶𝚎𝚗𝚎𝚛𝚊𝚝𝚎𝚛</p></div><div class="fancy-text"><p>FΛПᄃY ƬΣXƬ GΣПΣЯΛƬΣЯ</p></div><div class="fancy-text"><p>ƒαη¢у тєχт gєηєяαтєя</p></div><div class="fancy-text"><p>£åñ¢¥ †êx† Gêñêrå†êr</p></div><div class="fancy-text"><p>₣₳₦₵Ɏ ₮ɆӾ₮ ₲Ɇ₦ɆⱤ₳₮ɆⱤ</p></div><div class="fancy-text"><p>千卂几匚ㄚ ㄒ乇乂ㄒ Ꮆ乇几乇尺卂ㄒ乇尺</p></div><div class="fancy-text"><p>ｷﾑ刀ᄃﾘ ｲ乇ﾒｲ ム乇刀乇尺ﾑｲ乇尺</p></div><div class="fancy-text"><p>【F】【a】【n】【c】【y】 【T】【e】【x】【t】 【G】【e】【n】【e】【r】【a】【t】【e】【r】</p></div><div class="fancy-text"><p>『F』『a』『n』『c』『y』 『T』『e』『x』『t』 『G』『e』『n』『e』『r』『a』『t』『e』『r』</p></div><div class="fancy-text"><p>≋F≋a≋n≋c≋y≋ ≋T≋e≋x≋t≋ ≋G≋e≋n≋e≋r≋a≋t≋e≋r≋</p></div><div class="fancy-text"><p>░F░a░n░c░y░ ░T░e░x░t░ ░G░e░n░e░r░a░t░e░r░</p></div><div class="fancy-text"><p>(っ◔◡◔)っ ♥ Fancy Text Generater ♥</p></div><div class="fancy-text"><p>Ｆａｎｃｙ　Ｔｅｘｔ　Ｇｅｎｅｒａｔｅｒ　タ咽央,Ｆａｎｃｙ░Ｔｅｘｔ░Ｇｅｎｅｒａｔｅｒ　（タ咽央）,【&#65279;Ｆａｎｃｙ　Ｔｅｘｔ　Ｇｅｎｅｒａｔｅｒ】</p></div><div class="fancy-text"><p>˜”*°•.˜”*°• Fancy Text Generater •°*”˜.•°*”˜</p></div><div class="fancy-text"><p>[̲̅F][̲̅a][̲̅n][̲̅c][̲̅y] [̲̅T][̲̅e][̲̅x][̲̅t] [̲̅G][̲̅e][̲̅n][̲̅e][̲̅r][̲̅a][̲̅t][̲̅e][̲̅r]</p></div><div class="fancy-text"><p>F҉a҉n҉c҉y҉ ҉T҉e҉x҉t҉ ҉G҉e҉n҉e҉r҉a҉t҉e҉r҉</p></div><div class="fancy-text"><p>F̾a̾n̾c̾y̾ ̾T̾e̾x̾t̾ ̾G̾e̾n̾e̾r̾a̾t̾e̾r̾</p></div><div class="fancy-text"><p>F♥a♥n♥c♥y♥ ♥T♥e♥x♥t♥ ♥G♥e♥n♥e♥r♥a♥t♥e♥r</p></div><div class="fancy-text"><p>F͎a͎n͎c͎y͎ ͎T͎e͎x͎t͎ ͎G͎e͎n͎e͎r͎a͎t͎e͎r͎</p></div><div class="fancy-text"><p>F͓̽a͓̽n͓̽c͓̽y͓̽ ͓̽T͓̽e͓̽x͓̽t͓̽ ͓̽G͓̽e͓̽n͓̽e͓̽r͓̽a͓̽t͓̽e͓̽r͓̽</p></div><div class="fancy-text"><p>Wingdings: ☞︎♋︎■︎♍︎⍓︎ ❄︎♏︎⌧︎⧫︎ ☝︎♏︎■︎♏︎❒︎♋︎⧫︎♏︎❒︎</p></div><div class="fancy-text"><p>✮  🎀  𝐹𝒶𝓃𝒸𝓎 𝒯𝑒𝓍𝓉 𝒢𝑒𝓃𝑒𝓇𝒶𝓉𝑒𝓇  🎀  ✮</p></div><div class="fancy-text"><p>⋆🌠  🎀  𝐹𝒶𝓃𝒸𝓎 𝒯𝑒𝓍𝓉 𝒢𝑒𝓃𝑒𝓇𝒶𝓉𝑒𝓇  🎀  🌠⋆</p></div><div class="fancy-text"><p>▌│█║▌║▌║   🎀  𝐹𝒶𝓃𝒸𝓎 𝒯𝑒𝓍𝓉 𝒢𝑒𝓃𝑒𝓇𝒶𝓉𝑒𝓇  🎀   ║▌║▌║█│▌</p></div><div class="fancy-text"><p>🐣 ⋆ 🐸  🎀  𝐹𝒶𝓃𝒸𝓎 𝒯𝑒𝓍𝓉 𝒢𝑒𝓃𝑒𝓇𝒶𝓉𝑒𝓇  🎀  🐸 ⋆ 🐣</p></div><div class="fancy-text"><p>🐧  🎀  𝐹𝒶𝓃𝒸𝓎 𝒯𝑒𝓍𝓉 𝒢𝑒𝓃𝑒𝓇𝒶𝓉𝑒𝓇  🎀  🐧</p></div><div class="fancy-text"><p>🐙😡  ƒ𝕒ᑎᑕ𝐲 𝓉ⓔЖţ 𝑔𝓔ᶰｅⓡａ𝔱𝔼𝓇  🍫♦</p></div><div class="fancy-text"><p>🍔💘  𝔣𝔸ภᶜＹ 𝓉єx𝔱 𝓰𝔢ⓃẸｒ𝔞tέŕ  ♕😳</p></div><div class="fancy-text"><p>░▒▓█ ＦⓐŇς𝔶 Ｔ€𝔁t ģ𝐞𝐧乇ʳα𝓽є𝕣 █▓▒░</p></div><div class="fancy-text"><p>♙🎁  ｆ𝓪ᶰČ𝐘 ⓣ𝐞א𝕥 ᵍ𝔢Ⓝ€гＡⓣ𝑒ᖇ  💣🍫</p></div><div class="fancy-text"><p>◦•●◉✿ 𝐅คŇ𝕔Ｙ тｅｘt ｇᵉｎ𝓔ℝ卂丅𝓔Ⓡ ✿◉●•◦</p></div><div class="fancy-text"><p>▁ ▂ ▄ ▅ ▆ ▇ █ ғ𝐚几𝕔ү 𝔱𝕖᙭Ť قᵉภ€Ⓡａ𝐭𝐞Ｒ █ ▇ ▆ ▅ ▄ ▂ ▁</p></div><div class="fancy-text"><p>➶➶➶➶➶ ℱＡภᑕ𝕪 ⓣ𝒆Ｘ丅 ᵍε𝔫єŘａ𝔱єｒ ➷➷➷➷➷</p></div><div class="fancy-text"><p>💜🍮  Ƒａ几ᶜ¥ т𝐄x𝐓 gＥ几𝕖𝐫𝓪ţᗴя  🐲👍</p></div></div>    
+<div class="the-fancy-text" id="thefancy-text-three"><div class="fancy-text"><p>🎁🐯  千𝒶𝐧𝐜𝕐 t𝔼ЖŦ ق€ηＥｒᗩ𝓽𝔢я  ☆✌</p></div><div class="fancy-text"><p>🐻♧  𝔽ＡŇ𝓒Ｙ 𝐭𝑒ⓧт ⒼＥｎᵉℝⓐ𝕋𝐄𝔯  💙☜</p></div><div class="fancy-text"><p>¸,ø¤º°`°º¤ø,¸ Ƒ卂ηᶜ𝐲 Ťε𝐗т ق𝔢ᶰᗴŕ𝓐ᵗέ𝐑 ¸,ø¤º°`°º¤ø,¸</p></div><div class="fancy-text"><p>♔🍪  ℱÃŇ𝕔Ⓨ ᵗέאⓉ ⒼέⓃє𝓻卂Ŧ乇я  🐻🌷</p></div><div class="fancy-text"><p>💞♬  ƒα𝐧𝒸𝓎 𝕋𝕖𝓧ᵗ gＥη𝐄Ｒ𝒶𝓽ẸŘ  ♬♚</p></div><div class="fancy-text"><p>ൠ☆  𝕗ά几ČЎ 𝐓ẸxＴ g𝑒ℕｅ𝓇𝒶Ť𝔼Ř  💋👌</p></div><div class="fancy-text"><p>🎁🍟  𝔣ＡｎⒸㄚ 𝐭ᵉ𝐗ţ ﻮ𝒆𝓝ε𝕣𝒶ᵗεя  ♡💔</p></div><div class="fancy-text"><p>☹🎈  Ŧ𝐀𝕟Ć𝔂 ⓣ乇𝓧т ģẸ𝓝έŘΔｔ𝑒ℝ  💋🐤</p></div><div class="fancy-text"><p>ඏ✌  Ⓕαη𝓒ү 𝐓є𝐱Ť 𝑔έⓝⒺŘＡᵗⒺ𝔯  ♚🍔</p></div><div class="fancy-text"><p>♚🎈  ｆ𝓐ήĆ𝓎 𝓽ⓔＸ𝓉 ｇ𝔢ηєＲＡＴⒺʳ  ඏ☺</p></div><div class="fancy-text"><p>💗🎯  Ƒ𝓪𝕟𝓬ү Ｔε𝕩𝓽 ⓖ𝕖Ň𝐄ŘᗩŦ𝐞𝓇  😈🎃</p></div><div class="fancy-text"><p>🐚💝  𝔽ᗩภ匚ʸ 𝕥Ⓔχт 𝑔𝔼𝐧€яᵃᵗｅⓡ  👹☹</p></div><div class="fancy-text"><p>😾🐠  ƒ𝓐Ňς𝔶 ᵗ𝑒𝓧t 𝐠ᗴᶰ€ᖇᗩＴᗴᖇ  🎃💝</p></div><div class="fancy-text"><p>★✳  🎀  𝒻𝒶𝓃𝒸𝓎 𝓉𝑒𝓍𝓉 𝑔𝑒𝓃𝑒𝓇𝒶𝓉𝑒𝓇  🎀  ✳★</p></div><div class="fancy-text"><p>°°°·.°·..·°¯°·._.·   🎀  𝒻𝒶𝓃𝒸𝓎 𝓉𝑒𝓍𝓉 𝑔𝑒𝓃𝑒𝓇𝒶𝓉𝑒𝓇  🎀   ·._.·°¯°·..·°.·°°°</p></div><div class="fancy-text"><p>ıllıllı   🎀  𝒻𝒶𝓃𝒸𝓎 𝓉𝑒𝓍𝓉 𝑔𝑒𝓃𝑒𝓇𝒶𝓉𝑒𝓇  🎀   ıllıllı</p></div><div class="fancy-text"><p>f⃣&nbsp;&nbsp;&nbsp;a⃣&nbsp;&nbsp;&nbsp;n⃣&nbsp;&nbsp;&nbsp;c⃣&nbsp;&nbsp;&nbsp;y⃣ &nbsp;&nbsp;&nbsp;t⃣&nbsp;&nbsp;&nbsp;e⃣&nbsp;&nbsp;&nbsp;x⃣&nbsp;&nbsp;&nbsp;t⃣ &nbsp;&nbsp;&nbsp;g⃣&nbsp;&nbsp;&nbsp;e⃣&nbsp;&nbsp;&nbsp;n⃣&nbsp;&nbsp;&nbsp;e⃣&nbsp;&nbsp;&nbsp;r⃣&nbsp;&nbsp;&nbsp;a⃣&nbsp;&nbsp;&nbsp;t⃣&nbsp;&nbsp;&nbsp;e⃣&nbsp;&nbsp;&nbsp;r⃣</p></div><div class="fancy-text"><p>f⃞ &nbsp;&nbsp; a⃞ &nbsp;&nbsp; n⃞ &nbsp;&nbsp; c⃞ &nbsp;&nbsp; y⃞  &nbsp;&nbsp; t⃞ &nbsp;&nbsp; e⃞ &nbsp;&nbsp; x⃞ &nbsp;&nbsp; t⃞  &nbsp;&nbsp; g⃞ &nbsp;&nbsp; e⃞ &nbsp;&nbsp; n⃞ &nbsp;&nbsp; e⃞ &nbsp;&nbsp; r⃞ &nbsp;&nbsp; a⃞ &nbsp;&nbsp; t⃞ &nbsp;&nbsp; e⃞ &nbsp;&nbsp; r⃞</p></div></div>
+	</div>
+	
+  </div><!---container--->
+
+</main>
+<footer class="footer">
+<p style="text-align: center;">Fancy Text Generator</p>
+</div>
+
+</footer>
+  <script src="main.js"></script>
+</body>
+</html>
